@@ -7,7 +7,7 @@
       "exposure": "8分钟",
       "waterSource": "井水过滤",
       "box": "蓝盒A-03",
-      "status": "待入盒",
+      "status": "冲洗中",
       "defect": "边角显影不均",
       "logs": [
         {
@@ -19,6 +19,14 @@
           "at": "2026-06-21T03:50:30.042Z",
           "step": "入盒",
           "note": "放入A盒"
+        },
+        {
+          "at": "2026-09-25T23:41:00.481Z",
+          "step": "冲洗",
+          "operator": "阿珍",
+          "batchCode": "B-0920",
+          "dosage": 60,
+          "note": "药液 B-0920 扣减 60ml，操作人 阿珍，首次冲洗"
         }
       ],
       "steps": [
@@ -29,6 +37,68 @@
           "defect": "边角显影不均",
           "repair": "边角重涂",
           "note": "放入A盒"
+        },
+        {
+          "at": "2026-09-25T23:41:00.481Z",
+          "step": "冲洗",
+          "operator": "阿珍",
+          "developStatus": "",
+          "defect": "",
+          "repair": "",
+          "note": "首次冲洗",
+          "batchId": "CB-2026092001",
+          "batchCode": "B-0920",
+          "batchType": "显影液",
+          "dosage": 60
+        }
+      ]
+    }
+  ],
+  "batches": [
+    {
+      "id": "CB-2026060101",
+      "code": "B-0620",
+      "type": "显影液",
+      "capacity": 1000,
+      "remaining": 520,
+      "startDate": "2026-06-01",
+      "expireDate": "2026-07-15",
+      "active": true,
+      "ledger": [
+        {
+          "at": "2026-06-01T01:00:00.000Z",
+          "kind": "建档",
+          "amount": 1000,
+          "operator": "",
+          "note": "登记建档，初始容量 1000ml"
+        }
+      ]
+    },
+    {
+      "id": "CB-2026092001",
+      "code": "B-0920",
+      "type": "显影液",
+      "capacity": 800,
+      "remaining": 740,
+      "startDate": "2026-09-20",
+      "expireDate": "2026-10-20",
+      "active": true,
+      "ledger": [
+        {
+          "at": "2026-09-20T01:00:00.000Z",
+          "kind": "建档",
+          "amount": 800,
+          "operator": "",
+          "note": "登记建档，初始容量 800ml"
+        },
+        {
+          "at": "2026-09-25T23:41:00.481Z",
+          "kind": "冲洗",
+          "amount": -60,
+          "operator": "阿珍",
+          "itemCode": "CN-001",
+          "itemId": "",
+          "note": "冲洗底片 CN-001，扣减 60ml，余量 740ml"
         }
       ]
     }
